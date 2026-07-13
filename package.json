@@ -1,0 +1,45 @@
+{
+  "name": "douyin-live-assistant",
+  "version": "1.0.0",
+  "description": "抖音直播场控助手 - 房管小号专用，自动欢迎/感谢/回复/暖场",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "build:dir": "electron-builder --win --dir"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  },
+  "build": {
+    "appId": "com.dywzbb.app",
+    "productName": "抖音场控助手",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "config/**/*",
+      "tools/**/*",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "tools/",
+        "to": "tools/"
+      }
+    ]
+  }
+}

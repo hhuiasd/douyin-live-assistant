@@ -1,0 +1,20 @@
+{
+  "roomId": "",
+  "webRoomId": "",
+  "headless": false,
+  "features": {
+    "welcome": false,
+    "keyword": false,
+    "gift": false,
+    "warmup": false
+  },
+  "riskControl": {
+    "globalMaxPerHour": 30,
+    "sendIntervalMin": 1000,
+    "sendIntervalMax": 3000,
+    "circuitBreakerThreshold": 3,
+    "welcomeCooldownMinutes": 5
+  },
+  "chromePath": "",
+  "autoReplyDelay": 500
+}

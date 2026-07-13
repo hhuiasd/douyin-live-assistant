@@ -1,0 +1,43 @@
+{
+  "welcome": {
+    "enabled": true,
+    "templates": [
+      "欢迎 {nickname} 来到直播间~",
+      "{nickname} 来啦，快坐下~",
+      "欢迎新朋友 {nickname}，点点关注不迷路~"
+    ]
+  },
+  "keyword": {
+    "enabled": true,
+    "rules": [
+      {
+        "trigger": "价格|多少钱|怎么卖",
+        "reply": [
+          "私信主播了解详情哦~"
+        ]
+      },
+      {
+        "trigger": "尺码|多大|适合",
+        "reply": [
+          "评论区扣身高体重帮你推荐~"
+        ]
+      }
+    ]
+  },
+  "gift": {
+    "enabled": true,
+    "templates": [
+      "感谢 {nickname} 送的 {giftName}~",
+      "谢谢 {nickname} 的 {giftName}，太支持了~"
+    ]
+  },
+  "warmup": {
+    "enabled": true,
+    "templates": [
+      "新来的宝宝点点关注不迷路~",
+      "觉得主播讲得好的扣个1~",
+      "有没有新来的朋友，扣个1让我看到你~"
+    ],
+    "intervalMinutes": 3
+  }
+}

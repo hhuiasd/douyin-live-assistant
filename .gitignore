@@ -1,0 +1,37 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (electron-builder)
+dist/
+release/
+out/
+
+# Electron runtime (binary, ~232MB)
+electron/
+
+# Third-party tools (binary executables & certificates)
+tools/WssBarrageServer.exe
+tools/WssBarrageServer.exe.config
+tools/crts/
+tools/rootCert.pfx
+
+# Runtime data & logs
+log.txt
+*.log
+
+# User config (sensitive - contains cookies, login data)
+config/cookies.json
+config/chrome-profile/
+
+# IDE & agent metadata
+.vscode/
+.idea/
+.reasonix/
+.mimocode/
+
+# OS files
+Thumbs.db
+.DS_Store
