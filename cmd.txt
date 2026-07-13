@@ -1,6 +1,0 @@
-应用已重启。
-启动方式
-直接运行：
-D:\dywzbb\electron\electron.exe D:\dywzbb\main.js
-或者在 D:\dywzbb 目录下：
-.\electron\electron.exe .\main.js
